@@ -16,6 +16,19 @@ http.createServer(function (req, res) {
 });
 */
 var PORT    =   process.env.PORT || 3001;
+var http = require("http");
+
+http.createServer(function (req, res) {
+	// ヘッダーの送信 送信するデータのタイプはtext/plain
+	res.writeHead(200, {"Content-Type": "text/plain"});
+	// 中身の文字列を送信
+	res.end("hello, world! : URL " + req.url);
+}).listen(PORT,function () {
+
+	console.log("Server running at http://" + IP_ADDRESS + ":" + PORT + "/");
+	console.log("サーバを終了する際は[ctrl + c]を押してください");
+});
+
 
  var fs = require("fs");
  var util = require('util');
