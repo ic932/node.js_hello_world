@@ -20,7 +20,7 @@ http.createServer(function (req, res) {
  * パラメータ
  */
 var IP_ADDRESS = "localhost";
-var PORT       process.env.PORT || 3001;
+var PORT    =   process.env.PORT || 3001;
 
 /*
  * モジュール読み込み
