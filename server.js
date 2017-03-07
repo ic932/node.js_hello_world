@@ -35,7 +35,7 @@ http.createServer(function (req, res) {
 	res.writeHead(200, {"Content-Type": "text/plain"});
 	// 中身の文字列を送信
 	res.end("hello, world!\n");
-}).listen(PORT, IP_ADDRESS, function () {
+}).listen(PORT,function () {
 	/*
 	 * サーバ起動時に表示するログ(起動したことが分かりやすい)
 	 */
