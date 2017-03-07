@@ -1,0 +1,64 @@
+
+h1,h2{
+	display:block;
+	margin:auto;
+	font-size:6vw;
+	background-color:rgba(0,0,0,0.1);
+	width:40%;
+	line-height:15vw;
+	height:15vw;
+	color:#000;
+	border:solid 1px;
+}
+h1:hover,h2:hover{
+	transform: rotate(2deg);
+}
+.page{
+	width:100%;
+	height:100vh;
+	display:table;
+}
+#head {
+	background:#000 url(1.jpg) center center /cover no-repeat;
+	position:relative;
+	z-index: 1;
+}
+#main {
+	background:#000 url(2.jpg) center center /cover no-repeat;
+	margin-bottom:50vh;
+	position:relative;
+	z-index: 1;
+}
+.title{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.text{
+	font-size:3vw;
+}
+
+.content{
+	position:absolute;
+	bottom:5vh;
+	width:100%;
+	font-size:1.2em;
+	line-height:1.2;
+}
+
+.foot{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 51vh;
+	text-align: center;
+	color: rgba(255,255,255,0.75);
+	background: #000;
+	z-index: 0;
+}
+.foot p{
+	position:fixed;
+	top:90%;
+	width:100%;
+}
